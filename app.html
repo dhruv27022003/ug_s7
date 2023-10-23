@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water-quality Prediction</title>
+    
+		<script src=
+ "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+   </script>
+   <link rel="icon" href="file:///favicon.ico?v=2" />
+   <link rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0710/0633/files/favicon-perus_2.png?v=1639434194">
+
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body
+ bgcolor="grey"
+ background="1.jpeg"
+ 
+>
+<div class="img"></div>
+<form class="form">
+
+	<h2>ph</h2>
+	<input   type="text" id="uiph" class="floatLabel"  value="5">
+	<h2>Hardness</h2>
+	<input   type="text" id="uihardness" class="floatLabel"  value="100">
+	<h2>Solids</h2>
+	<input   type="text" id="uisolids" class="floatLabel"  value="100">
+	<h2>Chloramines</h2>
+	<input   type="text" id="uichloramines" class="floatLabel"  value="100">
+	<h2>Sulfate</h2>
+	<input   type="text" id="uisulfate" class="floatLabel"  value="100">
+	<h2>Conductivity</h2>
+	<input   type="text" id="uiconductivity" class="floatLabel"  value="100">
+	<h2>Organic_carbon</h2>
+	<input   type="text" id="uiorganic_carbon" class="floatLabel"  value="100">
+	<h2>Trihalomethanes</h2>
+	<input   type="text" id="uitrihalomethanes" class="floatLabel"  value="100">
+	<h2>Turbidity</h2>
+	<input   type="text" id="uiturbidity" class="floatLabel"  value="100">
+
+	</form>
+<form class="form">
+	
+	<button class="submit" onclick="onClickedEstimatequality()" type="button">Check </button>
+	<div id="uiWaterQuality" class="result">	</div>
+</body>
+</html>
